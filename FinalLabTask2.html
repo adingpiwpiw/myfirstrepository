@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript LabTask2</title>
+    <script type="text/javascript" src="FinalLabTask2.js"></script>
+
+    <!-- Embedded CSS for allignment -->
+    <style>
+        
+        #countDisplay
+        {
+            display: inline-block;
+        }
+
+        #totalCost, #feeDisplay, #hr, #totalWithFee, #estimatedTax, #orderTotal {
+            display: inline-block;
+            margin-left: 1in;
+        }
+
+    </style>
+</head>
+
+<body>
+    <fieldset style="width: 350px;">
+        <table>
+
+            <tr>
+                <td>Basketball Products: <input size="10"  id="count" ></input>
+                    <button onclick="increment()">+</button>
+                    <button onclick="decrement()">-</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Shipping and Handling Fee: 
+                    <input  value="4.99" size="5" id="fee">
+                </td>
+            </tr>
+
+        </table>
+    </fieldset>
+
+    <h3>Order Summary</h3>
+
+    <table>
+
+        <tr>
+            <td>Items ( <span id="countDisplay"></span> ):</td>
+            <td><span id="totalCost">$0.00</span></td>
+        </tr>
+
+        <tr>
+            <td>Shipping and handling:</td>
+            <td><span id="feeDisplay">$0.00</span></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td style="text-align: left;"><hr id="hr"style="width: 40px; "></td>
+        </tr>
+
+        <tr>
+            <td>Total before tax:</td>
+            <td><span id="totalWithFee">$0.00</span></td>
+        </tr>
+        
+        <tr>
+            <td>Estimated tax (10%):</td>
+            <td><span id="estimatedTax">$0.00</span></td>
+        </tr>   
+
+        <tr>
+            <td colspan="2"><hr></td>
+        </tr>
+
+        <tr>
+            <td style="color: red;font-weight: bold;">Order total:</td>
+            <td style="color: red;font-weight: bold;">
+                <span id="orderTotal">$0.00</span></td>
+        </tr>
+
+    </table>
+
+
+</body>
+</html>
